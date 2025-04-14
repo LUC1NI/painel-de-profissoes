@@ -14,16 +14,16 @@ $categoriaSelecionada = $_GET['categoria'] ?? '';
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         body {
-            background-color: #343a40; /* Cor de fundo escura */
-            color: #ffffff; /* Texto branco */
+            background-color: #343a40; 
+            color: #ffffff;
         }
         .card {
-            background-color: #495057; /* Cor de fundo das cartas */
-            border: none; /* Remove a borda padrão */
+            background-color: #495057;
+            border: none; 
         }
         .card img {
-            max-height: 150px; /* Altura máxima para as imagens */
-            object-fit: cover; /* Cobre o espaço sem distorcer */
+            max-height: 150px; 
+            object-fit: cover; 
         }
     </style>
 </head>

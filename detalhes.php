@@ -3,14 +3,13 @@ session_start();
 include 'includes/dados.php';
 include 'includes/cabecalho.php';
 
-// Junta as profissões fixas com as cadastradas na sessão
 $todasProfissoes = $profissoes;
 if (isset($_SESSION['novas_profissoes'])) {
     $todasProfissoes = array_merge($todasProfissoes, $_SESSION['novas_profissoes']);
 }
-$todasProfissoes = array_values($todasProfissoes); // Reindexa os IDs
+$todasProfissoes = array_values($todasProfissoes);
 
-// Verifica se foi passado um ID válido pela URL
+
 if (!isset($_GET['id']) || !isset($todasProfissoes[$_GET['id']])) {
     echo "<p>Profissão não encontrada.</p>";
     include 'includes/rodape.php';
@@ -30,18 +29,18 @@ $profissao = $todasProfissoes[$id];
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         body {
-            background-color: #343a40; /* Cor de fundo escura */
-            color: #ffffff; /* Texto branco */
+            background-color:rgb(45, 49, 53); 
+            color: #ffffff; 
         }
         .profissao {
-            background-color: #495057; /* Cor de fundo da profissão */
-            border-radius: 5px; /* Bordas arredondadas */
-            padding: 20px; /* Espaçamento interno */
-            margin: 20px 0; /* Margem superior e inferior */
+            background-color: #495057; 
+            border-radius: 5px; 
+            padding: 20px; 
+            margin: 20px 0; 
         }
         .profissao img {
-            max-width: 100%; /* Imagem responsiva */
-            border-radius: 5px; /* Bordas arredondadas para a imagem */
+            max-width: 100%;
+            border-radius: 5px; 
         }
     </style>
 </head>

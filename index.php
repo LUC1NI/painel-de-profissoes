@@ -1,11 +1,11 @@
 <?php
 session_start();
-include 'includes/dados.php'; // Verifique se o caminho está correto
+include 'includes/dados.php'; 
 include 'includes/cabecalho.php';
 
-// Verifique se a variável $profissoes está definida
+
 if (!isset($profissoes)) {
-    $profissoes = []; // Inicializa como um array vazio se não estiver definido
+    $profissoes = []; 
 }
 
 $todasProfissoes = $profissoes;
@@ -24,35 +24,35 @@ $todasProfissoes = array_values($todasProfissoes);
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         body {
-            background-color: #343a40; /* Cor de fundo escura */
-            color: #ffffff; /* Texto branco */
+            background-color: #343a40;
+            color: #ffffff; 
         }
         .card {
-            background-color: #495057; /* Cor do cartão */
-            transition: all 0.3s ease; /* Transição suave para todas as propriedades */
+            background-color: #495057; 
+            transition: all 0.3s ease; 
         }
         .card-img-top {
-            width: 100%; /* Largura total da carta */
-            height: 150px; /* Altura fixa para as imagens */
-            object-fit: cover; /* Corta a imagem para preencher o espaço */
+            width: 100%; 
+            height: 150px; 
+            object-fit: cover;
         }
         .card-body {
             display: flex;
             flex-direction: column;
-            justify-content: space-between; /* Para distribuir o conteúdo */
+            justify-content: space-between; 
         }
         .remover {
-            display: none; /* Inicialmente escondido */
-            margin-top: 10px; /* Margem superior */
+            display: none; 
+            margin-top: 10px; 
         }
     </style>
     <script>
         function toggleRemover(id) {
             var remover = document.getElementById('remover-' + id);
             if (remover.style.display === 'block') {
-                remover.style.display = 'none'; // Esconde o botão de remover
+                remover.style.display = 'none'; 
             } else {
-                remover.style.display = 'block'; // Mostra o botão de remover
+                remover.style.display = 'block'; 
             }
         }
     </script>

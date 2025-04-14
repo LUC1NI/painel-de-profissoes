@@ -41,11 +41,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         body {
-            background-color: #343a40; /* Cor de fundo escura */
-            color: #ffffff; /* Texto branco */
+            background-color: #343a40; 
+            color: #ffffff; 
         }
         .card {
-            background-color: #495057; /* Cor do cartão */
+            background-color: #495057;
         }
     </style>
 </head>

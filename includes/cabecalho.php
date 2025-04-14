@@ -13,7 +13,7 @@ if (session_status() === PHP_SESSION_NONE) {
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto"> <!-- Alinha os itens à direita -->
+            <ul class="navbar-nav ml-auto"> 
                 <li class="nav-item">
                     <a class="nav-link" href="index.php">Início</a>
                 </li>
